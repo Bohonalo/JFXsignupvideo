@@ -17,7 +17,7 @@ public class Controller implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        Media media=new Media("file:///home/ernesto/Top_10_Extreme_Sports.mp4");
+        Media media=new Media(getClass().getResource("Baby Marvake Maanegi Raftaar HD-VipKHAN.mp4").toExternalForm());
         MediaPlayer player=new MediaPlayer(media);
         mediaView.setMediaPlayer(player);
         player.setVolume(0);
